@@ -25,6 +25,22 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
@@ -67,6 +83,12 @@
         </dependency>
 
         <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
             <groupId>com.github.fge</groupId>
             <artifactId>json-patch</artifactId>
             <version>1.9</version>
@@ -80,8 +102,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>11</source> <!-- depending on your project -->
-                    <target>11</target> <!-- depending on your project -->
+                    <source>16</source> <!-- depending on your project -->
+                    <target>16</target> <!-- depending on your project -->
                     <annotationProcessorPaths>
                         <path>
                             <groupId>org.mapstruct</groupId>
